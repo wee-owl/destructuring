@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 export default function showSpecialAttacks({ special }) {
   if (special === undefined) {
     throw new Error('No special attack options available');
