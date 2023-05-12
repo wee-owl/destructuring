@@ -1,11 +1,12 @@
-export default function showSpecialAttacks(object) {
-  if (object.special === undefined) {
+/* eslint-disable no-undef */
+export default function showSpecialAttacks({ special }) {
+  if (special === undefined) {
     throw new Error('No special attack options available');
   }
 
   const result = [];
 
-  object.special.forEach(({
+  special.forEach(({
     id, name, description = 'Описание недоступно', icon,
   }) => {
     result.push({
